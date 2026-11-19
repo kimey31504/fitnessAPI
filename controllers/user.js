@@ -47,7 +47,7 @@ module.exports.loginUser = (req, res) => {
     }
 };
 
-module.exports.getProfile = (req,res) => {
+module.exports.getProfile = (req, res) => {
     return User.findById(req.user.id)
     .then(user => {
         if(!user){
